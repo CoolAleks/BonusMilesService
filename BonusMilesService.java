@@ -1,8 +1,6 @@
 public class BonusMilesService {
-    private BonusMilesService Service;
-    private long miles;
-
-    long calculate(int price) {
-        return price;
+    public int calculate(int price, int bonusRate) {
+        int bonusMiles = price / bonusRate;
+        return bonusMiles;
     }
 }
